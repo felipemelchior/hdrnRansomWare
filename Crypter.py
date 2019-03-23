@@ -1,7 +1,7 @@
-def changeFiles(filename, crytoFN, blockSize=16):
+def changeFiles(filename, cryptoFN, blockSize=16):
     
     with open(filename, 'r+b') as _file:
-        rawValue = _file.read(blocksize)
+        rawValue = _file.read(blockSize)
         
         while rawValue:
             cipherValue = cryptoFN(rawValue)
