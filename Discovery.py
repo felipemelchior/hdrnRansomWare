@@ -35,7 +35,7 @@ def discover(initial_path):
                 yield absPath 
 
 if __name__ == '__main__':
-    x = discover('/')
+    x = discover(os.getcwd())
     
     for i in x:
         print(i)
